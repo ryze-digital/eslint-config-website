@@ -15,3 +15,22 @@ import config from '@ryze-digital/eslint-config-website';
 
 export default config;
 ```
+
+### Add custom rules for your project
+
+If you are using jQuery (for example), you might want to allow `$` to be global.
+
+```js
+import config from '@ryze-digital/eslint-config-website';
+
+export default [
+    ...config,
+    {
+        languageOptions: {
+            globals: {
+                $: 'readonly'
+            }
+        }
+    }
+];
+```
