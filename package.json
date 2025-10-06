@@ -2,7 +2,7 @@
   "name": "@ryze-digital/eslint-config-website",
   "description": "Enforces a consistent JavaScript code style for our website projects",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "RYZE Digital GmbH <kontakt@ryze-digital.de> (https://www.ryze-digital.de/)",
   "main": "index.js",
   "repository": "github:ryze-digital/eslint-config-website",
