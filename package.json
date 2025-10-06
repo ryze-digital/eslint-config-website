@@ -7,8 +7,8 @@
   "main": "index.js",
   "repository": "github:ryze-digital/eslint-config-website",
   "peerDependencies": {
-    "eslint": "^9.17.0",
-    "eslint-plugin-jsdoc": "^50.6.1"
+    "eslint": "^9.37.0",
+    "eslint-plugin-jsdoc": "^50.8.0"
   },
   "keywords": [
     "eslint",
