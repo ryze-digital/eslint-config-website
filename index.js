@@ -94,8 +94,19 @@ export default [
             'no-multi-spaces': [
                 'error'
             ],
+            'no-shadow-restricted-names': [
+                'error', {
+                    reportGlobalThis: false
+                }
+            ],
             'no-tabs': [
                 'error'
+            ],
+            'no-unassigned-vars': [
+                'off'
+            ],
+            'no-useless-assignment': [
+                'off'
             ],
             'no-var': [
                 'error'
@@ -110,6 +121,9 @@ export default [
             ],
             'prefer-const': [
                 'error'
+            ],
+            'preserve-caught-error': [
+                'off'
             ],
             quotes: [
                 'error',
@@ -140,6 +154,15 @@ export default [
                 'error',
                 'never'
             ],
+            'jsdoc/escape-inline-tags': [
+                'off'
+            ],
+            'jsdoc/reject-any-type': [
+                'off'
+            ],
+            'jsdoc/reject-function-type': [
+                'off'
+            ],
             'jsdoc/require-jsdoc': [
                 'warn', {
                     require: {
@@ -148,6 +171,9 @@ export default [
                     exemptEmptyFunctions: true
                 }
             ],
+            'jsdoc/require-next-type': [
+                'off'
+            ],
             'jsdoc/require-param-description': [
                 'off'
             ],
@@ -155,6 +181,15 @@ export default [
                 'off'
             ],
             'jsdoc/require-returns-description': [
+                'off'
+            ],
+            'jsdoc/require-throws-type': [
+                'off'
+            ],
+            'jsdoc/require-yields-type': [
+                'off'
+            ],
+            'jsdoc/ts-no-empty-object-type': [
                 'off'
             ]
         }
