@@ -21,16 +21,17 @@ export default config;
 If you are using jQuery (for example), you might want to allow `$` to be global.
 
 ```js
+import { defineConfig } from 'eslint/config';
 import config from '@ryze-digital/eslint-config-website';
 
-export default [
-    ...config,
+export default defineConfig([
     {
+        extends: [config],
         languageOptions: {
             globals: {
                 $: 'readonly'
             }
         }
     }
-];
+]);
 ```
