@@ -6,9 +6,15 @@
   "author": "RYZE Digital GmbH <kontakt@ryze-digital.de> (https://www.ryze-digital.de/)",
   "main": "index.js",
   "repository": "github:ryze-digital/eslint-config-website",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "check": "eslint --no-config-lookup --config index.js"
+  },
   "peerDependencies": {
-    "eslint": "^9.37.0",
-    "eslint-plugin-jsdoc": "^50.8.0"
+    "eslint": "^10.12.0",
+    "eslint-plugin-jsdoc": "^65.3.0"
   },
   "keywords": [
     "eslint",
@@ -16,5 +22,9 @@
     "lint",
     "javascript"
   ],
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "globals": "^16.5.0"
+  }
 }
