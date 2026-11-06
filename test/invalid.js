@@ -1,11 +1,17 @@
 /*
- * This file shown 78 problems with eslint version 9 and after upgrade to 10 it still shows 78
- * Below is the full error message
- * ✖ 78 problems (39 errors, 39 warnings)
- * ✖ 33 errors and 19 warnings potentially fixable with the `--fix` option.
+ * Deliberately invalid file used as a regression fixture for the shipped config.
+ * Every message ESLint reports for this file (line, column, severity, rule id)
+ * is recorded in invalid.snapshot.json. After a dependency upgrade the snapshot
+ * must still match, otherwise a rule changed its behaviour.
  *
- *     npm run check -- test/invalid.js
+ *     npm test                 compare against the snapshot
+ *     npm test -- --update     rewrite the snapshot after an intentional change
+ *     npm run lint -- test/invalid.js   print the raw ESLint output
  *
+ * Baseline for the ESLint 9 -> 10 upgrade: ESLint 9 / eslint-plugin-jsdoc 50
+ * reported 80 problems, ESLint 10 / eslint-plugin-jsdoc 65 reports 78. The
+ * only difference is jsdoc/no-undefined-types (4 -> 2), which became more
+ * precise in eslint-plugin-jsdoc 65. All other rules report identically.
  */
 
 /**

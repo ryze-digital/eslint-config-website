@@ -10,7 +10,8 @@
     "index.js"
   ],
   "scripts": {
-    "check": "eslint --no-config-lookup --config index.js"
+    "lint": "eslint --no-config-lookup --config index.js",
+    "test": "node test/snapshot.js"
   },
   "peerDependencies": {
     "eslint": "^10.14.0"
