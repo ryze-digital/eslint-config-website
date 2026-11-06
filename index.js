@@ -22,16 +22,6 @@ export default defineConfig([
                 'error',
                 'always'
             ],
-            'arrow-parens': [
-                'error',
-                'always'
-            ],
-            'arrow-spacing': [
-                'error'
-            ],
-            'brace-style': [
-                'error'
-            ],
             'consistent-return': [
                 'error'
             ],
@@ -39,36 +29,6 @@ export default defineConfig([
                 'error'
             ],
             eqeqeq: [
-                'error'
-            ],
-            indent: [
-                'error',
-                4, {
-                    SwitchCase: 1
-                }
-            ],
-            'key-spacing': [
-                'error',
-                {
-                    'beforeColon': false
-                }
-            ],
-            'linebreak-style': [
-                'error',
-                'unix'
-            ],
-            'lines-between-class-members': [
-                'error',
-                'always'
-            ],
-            'new-parens': [
-                'error'
-            ],
-            'newline-after-var': [
-                'error',
-                'always'
-            ],
-            'newline-before-return': [
                 'error'
             ],
             'no-console': [
@@ -86,21 +46,10 @@ export default defineConfig([
             'no-lonely-if': [
                 'error'
             ],
-            'no-multiple-empty-lines': [
-                'error', {
-                    max: 1
-                }
-            ],
-            'no-multi-spaces': [
-                'error'
-            ],
             'no-shadow-restricted-names': [
                 'error', {
                     reportGlobalThis: false
                 }
-            ],
-            'no-tabs': [
-                'error'
             ],
             'no-unassigned-vars': [
                 'off'
@@ -110,10 +59,6 @@ export default defineConfig([
             ],
             'no-var': [
                 'error'
-            ],
-            'object-curly-spacing': [
-                'error',
-                'always'
             ],
             'one-var': [
                 'error',
@@ -125,29 +70,7 @@ export default defineConfig([
             'preserve-caught-error': [
                 'off'
             ],
-            quotes: [
-                'error',
-                'single'
-            ],
             'require-await': [
-                'error'
-            ],
-            semi: [
-                'error',
-                'always'
-            ],
-            'space-before-blocks': [
-                'error',
-                'always'
-            ],
-            'space-before-function-paren': [
-                'error',
-                'never'
-            ],
-            'space-unary-ops': [
-                'error'
-            ],
-            'spaced-comment': [
                 'error'
             ],
             'unicode-bom': [
