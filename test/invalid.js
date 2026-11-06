@@ -8,10 +8,14 @@
  *     npm test -- --update     rewrite the snapshot after an intentional change
  *     npm run lint -- test/invalid.js   print the raw ESLint output
  *
- * Baseline for the ESLint 9 -> 10 upgrade: ESLint 9 / eslint-plugin-jsdoc 50
- * reported 80 problems, ESLint 10 / eslint-plugin-jsdoc 65 reports 78. The
- * only difference is jsdoc/no-undefined-types (4 -> 2), which became more
- * precise in eslint-plugin-jsdoc 65. All other rules report identically.
+ * The file still contains formatting violations (quotes, indentation, spacing,
+ * blank lines). They are intentionally not reported: formatting is owned by
+ * @ryze-digital/prettier-config-website, this config only covers code quality.
+ *
+ * History: at the ESLint 9 -> 10 upgrade, ESLint 9 / eslint-plugin-jsdoc 50
+ * reported 80 problems and ESLint 10 / eslint-plugin-jsdoc 65 reported 78. The
+ * only difference was jsdoc/no-undefined-types (4 -> 2), which became more
+ * precise in eslint-plugin-jsdoc 65.
  */
 
 /**
