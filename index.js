@@ -1,11 +1,14 @@
 import js from '@eslint/js';
 import globals from 'globals';
 import jsdoc from 'eslint-plugin-jsdoc';
+import { defineConfig } from 'eslint/config';
 
-export default [
-    js.configs.recommended,
-    jsdoc.configs['flat/recommended'],
+export default defineConfig([
     {
+        extends: [
+            js.configs.recommended,
+            jsdoc.configs['flat/recommended']
+        ],
         languageOptions: {
             ecmaVersion: 'latest',
             sourceType: 'module',
@@ -169,4 +172,4 @@ export default [
             }
         }
     }
-];
+]);
