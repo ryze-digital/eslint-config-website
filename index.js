@@ -17,9 +17,6 @@ export default defineConfig([
                 process: 'readonly'
             }
         },
-        plugins: {
-            jsdoc
-        },
         rules: {
             'arrow-body-style': [
                 'error',
